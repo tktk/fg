@@ -18,6 +18,7 @@ def build( _context ):
                         'tostring.c',
                         'toutf8.c',
                         'toutf16.c',
+                        'toutf32.c',
                     },
                 },
             },
