@@ -5,28 +5,17 @@ from . import cmdoption
 
 import os.path
 
-def buildProgram(
-    _context,
-    _target,
-    sources = set(),
-    useModules = set(),
-    libraries = set(),
+def getTargetName(
+    _header,
+    _moduleName,
 ):
-    _build(
-        _context.program,
-        _context,
-        _target,
-        sources,
-        useModules,
-        libraries,
-    )
+    return _header + '-' + _moduleName
 
 def buildShlib(
     _context,
     _target,
     sources = set(),
     useModules = set(),
-    libraries = set(),
 ):
     _build(
         _context.shlib,
@@ -34,7 +23,6 @@ def buildShlib(
         _target,
         sources,
         useModules,
-        libraries,
     )
 
 def _build(
@@ -43,13 +31,11 @@ def _build(
     _target,
     _sources,
     _useModules,
-    _libraries,
 ):
     _buildFunc(
         target = _target,
         source = _generateSources( _sources ),
         use = _useModules,
-        lib = _libraries,
         includes = _context.env.MY_INCLUDES,
         defines = _context.env.MY_DEFINES,
         cxxflags = _context.env.MY_CXXFLAGS,
