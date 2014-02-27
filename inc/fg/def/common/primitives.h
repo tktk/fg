@@ -29,4 +29,28 @@ typedef char FgUtf8Char;
 typedef char16_t FgUtf16Char;
 typedef char32_t FgUtf32Char;
 
+typedef struct FgString
+{
+    FgStringChar *  ptr;
+    FgSize          length;
+} FgString;
+
+typedef struct FgUtf8
+{
+    FgUtf8Char *    ptr;
+    FgSize          length;
+} FgUtf8;
+
+typedef struct FgUtf16
+{
+    FgUtf16Char *   ptr;
+    FgSize          length;
+} FgUtf16;
+
+typedef struct FgUtf32
+{
+    FgUtf32Char *   ptr;
+    FgSize          length;
+} FgUtf32;
+
 #endif  // FG_DEF_COMMON_PRIMITIVES_H
