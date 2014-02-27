@@ -16,6 +16,7 @@ def build( _context ):
                 common.FG : {
                     _MODULE_NAME : {
                         'tostring.c',
+                        'toutf8.c',
                     },
                 },
             },
