@@ -17,6 +17,7 @@ def build( _context ):
                     _MODULE_NAME : {
                         'tostring.c',
                         'toutf8.c',
+                        'toutf16.c',
                     },
                 },
             },
