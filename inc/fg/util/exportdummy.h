@@ -7,7 +7,7 @@
 #include <stddef.h>
 
 #define FG_DEFINE_FUNCTION( _func, _returnType, _dummyProc ) \
-    FGEXPORT _returnType _func { _dummyProc };
+    FGEXPORT _returnType _func { _dummyProc }
 #define FG_FUNCTION_VOID( _func ) \
     FG_DEFINE_FUNCTION( _func, void, )
 #define FG_FUNCTION_BOOL( _func ) \
