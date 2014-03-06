@@ -4,10 +4,6 @@
 #include "fg/def/common/primitives.h"
 #include "fg/util/import.h"
 
-enum {
-    FG_MAX_UTF16_CHAR_COUNT = 2,
-};
-
 FG_FUNCTION_BOOL(
     fgToUtf16FromString(
         FgUtf16 *           _to

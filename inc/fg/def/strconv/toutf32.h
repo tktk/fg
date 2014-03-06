@@ -1,0 +1,8 @@
+﻿#ifndef FG_DEF_STRCONV_TOUTF32_H
+#define FG_DEF_STRCONV_TOUTF32_H
+
+enum {
+    FG_MAX_UTF32_CHAR_COUNT = 1,
+};
+
+#endif  // FG_DEF_STRCONV_TOUTF32_H

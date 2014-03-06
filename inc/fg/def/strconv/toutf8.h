@@ -1,0 +1,8 @@
+﻿#ifndef FG_DEF_STRCONV_TOUTF8_H
+#define FG_DEF_STRCONV_TOUTF8_H
+
+enum {
+    FG_MAX_UTF8_CHAR_COUNT = 6,
+};
+
+#endif  // FG_DEF_STRCONV_TOUTF8_H
