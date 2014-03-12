@@ -3,6 +3,8 @@
 
 #include "fg/util/extern.h"
 
+#undef  FGEXPORT
+
 #if defined COMPILER_TYPE_CLANG // COMPILER_TYPE
 #   define FGEXPORT FGEXTERN __attribute__( ( visibility( "default" ) ) )
 #elif defined COMPILER_TYPE_MSVC    // COMPILER_TYPE

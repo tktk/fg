@@ -1,6 +1,7 @@
 ﻿#ifndef FG_STRCONV_TOUTF8_H
 #define FG_STRCONV_TOUTF8_H
 
+#include "fg/def/strconv/toutf8.h"
 #include "fg/def/common/primitives.h"
 #include "fg/util/import.h"
 
