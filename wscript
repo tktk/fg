@@ -7,7 +7,7 @@ from wscripts import fg
 import os.path
 
 APPNAME = 'fg'
-VERSION = '0.1.0'
+VERSION = '0.2.0'
 
 out = common.BUILD_DIR
 
