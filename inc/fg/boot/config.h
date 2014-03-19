@@ -2,6 +2,7 @@
 #define FG_BOOT_CONFIG_H
 
 #include "fg/def/boot/config.h"
+#include "fg/def/common/primitives.h"
 #include "fg/util/import.h"
 
 FG_FUNCTION_PTR(
@@ -13,6 +14,13 @@ FG_FUNCTION_PTR(
 FG_FUNCTION_VOID(
     fgBootConfigFree(
         FgBootConfig *  _this
+    )
+)
+
+FG_FUNCTION_BOOL(
+    fgBootConfigSetMainFile(
+        FgBootConfig *      _this
+        , const FgUtf32 *   _MAIN_FILE
     )
 )
 
