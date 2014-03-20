@@ -24,4 +24,11 @@ FG_FUNCTION_BOOL(
     )
 )
 
+FG_FUNCTION_BOOL(
+    fgBootConfigSetMainType(
+        FgBootConfig *      _this
+        , const FgUtf32 *   _MAIN_TYPE
+    )
+)
+
 #endif  // FG_BOOT_CONFIG_H
