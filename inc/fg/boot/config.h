@@ -18,6 +18,13 @@ FG_FUNCTION_VOID(
 )
 
 FG_FUNCTION_BOOL(
+    fgBootConfigSetLoader(
+        FgBootConfig *      _this
+        , const FgUtf32 *   _LOADER
+    )
+)
+
+FG_FUNCTION_BOOL(
     fgBootConfigSetMainFile(
         FgBootConfig *      _this
         , const FgUtf32 *   _MAIN_FILE
